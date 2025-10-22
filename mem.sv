@@ -3,7 +3,7 @@ module mem (
   input  logic [31:0] a, wd,
   output logic [31:0] rd);
   
-  logic  [31:0] RAM [0:255]; 
+  logic  [31:0] RAM [0:511]; 
 
   // initialize memory with data from the assembled .hex file
   initial begin

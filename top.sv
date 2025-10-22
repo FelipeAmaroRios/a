@@ -22,7 +22,7 @@ module top(
   // memory 
   mem ram(clk, memwrite, addr, writedata, MEM_readdata);
 
- wire isIO  = addr[8]; // 0x0000_0100
+ wire isIO  = addr[9]; // 0x0000_0100
   wire isRAM = !isIO;
   localparam IO_LEDS_bit = 2; // 0x0000_0104
   localparam IO_HEX_bit  = 3; // 0x0000_0108

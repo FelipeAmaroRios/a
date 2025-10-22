@@ -4,7 +4,7 @@ ENTRY(_start)
 MEMORY
 {
   text (rx)  : ORIGIN = 0x00000000, LENGTH = 64K
-  data (rw)  : ORIGIN = 0x00000100, LENGTH = 64K
+  data (rw)  : ORIGIN = 0x00000080, LENGTH = 64K
 }
 
 SECTIONS
